@@ -37,3 +37,41 @@ WHEN UBUNTU OS IS HAVING SYSTEM WIDE MAJOR ISSUES AND I DON'T KNOW WHAT TO DO !
   $ sudo apt update && sudo apt upgrade
 
     Use a live USB: If you cannot boot into your system, boot from a live USB to check the system.
+
+
+
+
+===============================================================================================================================================
+OUESTION SOURCE: https://forums.unraid.net/topic/150670-solved-squashfs-errors-failed-to-read-block-and-locked-up-mntcache/#comment-1348822
+             /   Jan  4 04:16:01 jRAID kernel: SQUASHFS error: xz decompression failed, data probably corrupt
+    ERROR  : -----   Jan  4 04:16:01 jRAID kernel: SQUASHFS error: Failed to read block 0xbfea4: -5
+             \   Jan  4 04:16:01 jRAID kernel: SQUASHFS error: Unable to read fragment cache entry [bfea4]
+    SOLUTION: This usually indicate a flash drive problem. 
+ MY CONCLUSION: Try restarting ubuntu 22.04 from bootable pen drive again.
+===============================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
