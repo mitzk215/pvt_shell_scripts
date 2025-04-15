@@ -1,0 +1,5 @@
+@-moz-document url-prefix("https://en.wikipedia.org/wiki/") {
+body{font-family: arial !important;
+    color: black !important;
+}
+}
