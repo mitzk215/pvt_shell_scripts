@@ -34,15 +34,14 @@ sudo chmod a+x snap_tasks.sh
 # sudo snap refresh && sudo snap refresh firefox --channel latest/stable
 
 
+# I also have to update thins in apt repository 
+sudo add_apt_repository -y universe
+
 #### APT PACKAGE MANAGEMENT ####
 # testing
 sudo chmod a+x apt_tasks.sh
 ./apt_tasks.sh
 
-# I also have to update thins in apt repository 
-sudo add_apt_repository -y universe
-# install packages from the apt repository which are not in snap
-sudo apt get install -y vim bucklespring 
 
 
 
