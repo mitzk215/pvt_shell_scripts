@@ -27,6 +27,12 @@ set -o pipeline
 #setting the right timezone for ubuntu
 sudo timedatectl set-timezone Asia/Kolkata
 
+#set sound over-amplification
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+
+#disable on-board touchpad
+gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
+
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
 sudo chmod a+x snap_tasks.sh
