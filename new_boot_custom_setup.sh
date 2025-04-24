@@ -21,12 +21,14 @@
 # e flag will exit the script as soon as first error or non-zero exit 
 # status is encountered
 set -e
+set -x
+set -o pipeline
 
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
 sudo chmod a+x snap_tasks.sh
-.snap_tasks.sh
+./snap_tasks.sh
 # in case if I want to check the channel of firefox I can use the command:
 # snap info firefox
 # sudo snap refresh && sudo snap refresh firefox --channel latest/stable
@@ -35,7 +37,7 @@ sudo chmod a+x snap_tasks.sh
 #### APT PACKAGE MANAGEMENT ####
 # testing
 sudo chmod a+x apt_tasks.sh
-.apt_tasks.sh
+./apt_tasks.sh
 
 # I also have to update thins in apt repository 
 sudo add_apt_repository -y universe
