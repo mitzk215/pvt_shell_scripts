@@ -35,7 +35,7 @@ sudo chmod a+x snap_tasks.sh
 
 
 # I also have to update thins in apt repository 
-sudo add_apt_repository -y universe
+sudo add-apt-repository -y universe
 
 #### APT PACKAGE MANAGEMENT ####
 # testing
