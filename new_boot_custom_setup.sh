@@ -29,7 +29,7 @@ sudo chmod a+x snap_tasks.sh
 .snap_tasks.sh
 # in case if I want to check the channel of firefox I can use the command:
 # snap info firefox
-sudo snap refresh && sudo snap refresh firefox channel latest/stable
+# sudo snap refresh && sudo snap refresh firefox --channel latest/stable
 
 
 #### APT PACKAGE MANAGEMENT ####
