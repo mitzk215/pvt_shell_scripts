@@ -24,6 +24,8 @@ set -e
 set -x
 set -o pipeline
 
+#setting the right timezone for ubuntu
+sudo timedatectl set-timezone Asia/Kolkata
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
