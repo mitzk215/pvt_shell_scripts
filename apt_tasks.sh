@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 #installing vim bucklespring
 sudo apt install -y vim bucklespring 
