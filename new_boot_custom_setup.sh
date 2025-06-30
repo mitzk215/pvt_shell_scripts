@@ -22,7 +22,7 @@
 # status is encountered
 set -e
 set -x
-set -o pipeline
+set -o pipefail
 
 #setting the right timezone for ubuntu
 sudo timedatectl set-timezone Asia/Kolkata
@@ -35,7 +35,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
-sudo chmod a+x snap_tasks.sh
+sudo chmod +x snap_tasks.sh
 ./snap_tasks.sh
 # in case if I want to check the channel of firefox I can use the command:
 # snap info firefox
@@ -47,7 +47,7 @@ sudo add-apt-repository -y universe
 
 #### APT PACKAGE MANAGEMENT ####
 # testing
-sudo chmod a+x apt_tasks.sh
+sudo chmod +x apt_tasks.sh
 ./apt_tasks.sh
 
 
