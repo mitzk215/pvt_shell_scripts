@@ -5,33 +5,31 @@
 
 #
 # FIRSTLY UBUNTU related changes has to be made by me!
-# 1. connect wifi
-# 2. change system date/time
-# 3. increase audio level
+# 1. connect wifi - TODO
+# 2. change system date/time - done
+# 3. increase audio level - done
 
-# THEN FIrefox related changes have to be made  by me !
-# 1. Installing ad-blocke extensions, stylus
-# 2. enable cycle throug tabs.
-# 3. login to youtube automatically OR google login automatically
-# 4. login to github automatically.
+# THEN Firefox related changes have to be made  by me !
+# 1. Installing ad-block extension & stylus - TODO
+# 2. enable cycle throug tabs - TODO
+# 3. login to youtube automatically OR google login automatically - TODO
+# 4. login to github automatically - TODO
 # 5. login to 
 
-# some default apps in ubuntu has to be removed like games,  thunderbird, etc.
+# some default apps in ubuntu has to be removed like games,  thunderbird, etc. - TODO
 
-# e flag will exit the script as soon as first error or non-zero exit 
-# status is encountered
-set -e
-set -x
-set -o pipefail
+set -e   #this flag will exit the script as soon as first error or non-zero exit status is encountered
+set -x   # print each command when it gets executed
+set -o pipefail   # stop executing script even if any command fails in pipeline 
 
 #setting the right timezone for ubuntu
 sudo timedatectl set-timezone Asia/Kolkata
 
 #set sound over-amplification
-gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
+sudo gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 
 #disable on-board touchpad
-gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
+sudo gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
