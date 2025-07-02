@@ -50,8 +50,9 @@ sudo chmod +x apt_tasks.sh
 
 
 
-
-
+## AFETR INSTALLING ALL THE ABOVE  ##
+1. INSTALL FIREFOX AB BLOCK EXTENSION : AdGuard AdBlocker by Adguard Software Ltd.(Green Shield with tick)
+2. ENABLE FIREFOX SETTING: TOGGLE RECENTLY VISITED TABS 
 
 
 
