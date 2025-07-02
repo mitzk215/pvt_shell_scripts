@@ -10,6 +10,9 @@ sudo apt install -y heif-thumbnailer
 #sudo apt install converseen
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+## installing support for viewing webp image files
+sudo apt install -y webp-pixbuf-loader
+
 #installing vim bucklespring
 sudo apt install -y vim bucklespring git
 
