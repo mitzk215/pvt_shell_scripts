@@ -25,11 +25,18 @@ set -o pipefail   # stop executing script even if any command fails in pipeline
 #setting the right timezone for ubuntu
 sudo timedatectl set-timezone Asia/Kolkata
 
-#set sound over-amplification
-sudo gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 
+## not working from this script file due to some unknown issue. Find the root cause(TODO)
+#set sound over-amplification
+#sudo gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 #disable on-board touchpad
-sudo gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
+#sudo gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
+
+## EDIT .bashrc file and reload it. Till that time I ave put this in bashrc file and reloading the file
+echo 'gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true' >> $HOME/.bashrc 
+#echo 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled' >> $HOME/.bashrc
+echo "alias clear='clear -x'" >> $HOME/.bashrc
+source $HOME/.bashrc
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
