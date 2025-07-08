@@ -16,6 +16,9 @@ sudo apt install -y webp-pixbuf-loader
 #installing vim bucklespring
 sudo apt install -y vim bucklespring git
 
+## check bluetooth service is running or not, if not use this command to run it !
+# sudo systemctl restart bluetooth.service
+
 
 #running bucklespring in the background
 nohup buckle -g 50 &
