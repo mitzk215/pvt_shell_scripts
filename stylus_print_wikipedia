@@ -3,3 +3,9 @@ body{font-family: arial !important;
     color: black !important;
 }
 }
+
+
+# django documentation style for reading.
+@-moz-document url-prefix("https://docs.djangoproject.com/en/") {
+body { color: black !important } 
+}
