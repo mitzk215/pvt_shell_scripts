@@ -43,7 +43,7 @@ source $HOME/.bashrc
 ## install vscode
 wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/c306e94f98122556ca081f527b466015e1bc37b0/code_1.102.2-1753187809_amd64.deb
 if [ ?$ -eq 0 ]; then
-dpkg -i code_1.102.2-1753187809_amd64.deb
+sudo dpkg -i code_1.102.2-1753187809_amd64.deb
 else
 echo "Error ! Couldn't download vscode from website !"
 fi
