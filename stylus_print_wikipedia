@@ -9,3 +9,8 @@ body{font-family: arial !important;
 @-moz-document url-prefix("https://docs.djangoproject.com/en/") {
 body { color: black !important } 
 }
+
+@-moz-document url-prefix("https://click.palletsprojects.com/"), url-prefix("https://realpython.com/"), url-prefix("https://www.pythonmorsels.com/") {
+body{color:black !important}
+div.body{color:black !important}  
+}
