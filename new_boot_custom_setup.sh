@@ -35,18 +35,18 @@ sudo timedatectl set-timezone Asia/Kolkata
 ## EDIT .bashrc file and reload it. Till that time I ave put this in bashrc file and reloading the file
 echo 'gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true' >> $HOME/.bashrc 
 #echo 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled' >> $HOME/.bashrc
-echo "alias clear='clear -x'" >> $HOME/.bashrc
+#echo "alias clear='clear -x'" >> $HOME/.bashrc
 source $HOME/.bashrc
 
 
 
 ## install vscode
-wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/c306e94f98122556ca081f527b466015e1bc37b0/code_1.102.2-1753187809_amd64.deb
-if [ ?$ -eq 0 ]; then
-sudo dpkg -i code_1.102.2-1753187809_amd64.deb
-else
-echo "Error ! Couldn't download vscode from website !"
-fi
+#wget https://vscode.download.prss.microsoft.com/dbazure/download/stable/c306e94f98122556ca081f527b466015e1bc37b0/code_1.102.2-1753187809_amd64.deb
+#if [ ?$ -eq 0 ]; then
+#sudo dpkg -i code_1.102.2-1753187809_amd64.deb
+#else
+#echo "Error ! Couldn't download vscode from website !"
+#fi
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
