@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 # PURPOSE/DESCRIPTION : This is a single file consisting of all the necessary 
 # things I require when I start my ubuntu machine or restart my machine after a hang.
@@ -50,7 +50,7 @@ fi
 
 #### SNAP PACKAGE MANAGEMENT ######
 #testing
-sudo chmod +x snap_tasks.sh
+sudo chmod u+x snap_tasks.sh
 ./snap_tasks.sh
 # in case if I want to check the channel of firefox I can use the command:
 # snap info firefox
@@ -62,7 +62,7 @@ sudo add-apt-repository -y universe
 
 #### APT PACKAGE MANAGEMENT ####
 # testing
-sudo chmod +x apt_tasks.sh
+sudo chmod u+x apt_tasks.sh
 ./apt_tasks.sh
 
 
