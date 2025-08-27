@@ -32,6 +32,8 @@ sudo timedatectl set-timezone Asia/Kolkata
 #disable on-board touchpad
 #sudo gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled
 
+echo 'HOME = '$HOME
+
 ## EDIT .bashrc file and reload it. Till that time I ave put this in bashrc file and reloading the file
 echo 'gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true' >> $HOME/.bashrc 
 #echo 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled' >> $HOME/.bashrc
