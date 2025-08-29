@@ -35,10 +35,10 @@ sudo timedatectl set-timezone Asia/Kolkata
 echo 'HOME = '$HOME
 
 ## EDIT .bashrc file and reload it. Till that time I ave put this in bashrc file and reloading the file
-echo 'gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true' >> $HOME/.bashrc 
+echo 'gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true' >> /home/ubuntu/.bashrc 
 #echo 'gsettings set org.gnome.desktop.peripherals.touchpad send-events disabled' >> $HOME/.bashrc
 #echo "alias clear='clear -x'" >> $HOME/.bashrc
-source $HOME/.bashrc
+source /home/ubuntu/.bashrc
 
 
 
